@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#434343"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_marginTop="15dp"
+        android:hint="enter plaintext"
+        android:textColorHint="#FFE4E1"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:fontFamily="@font/bros"
+        android:textColor="#FAEBD7"
+        android:layout_height="wrap_content"
+        android:padding="12dp"/>
+    <EditText
+        android:id="@+id/password"
+        android:textSize="18sp"
+        android:fontFamily="@font/bros"
+        android:textColorHint="#FFE4E1"
+        android:textColor="#FAEBD7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputText"
+        android:hint="enter password"
+        android:padding="12dp"/>
+    <Button
+        android:id="@+id/encBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:background="#2C3E50"
+        android:text="Encrypt"
+        android:fontFamily="@font/sofachri"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_margin="10dp"
+        android:textColor="#FAEBD7"
+        android:background="#5B6467"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/encBtn"
+        android:padding="40dp"
+        />
+    <Button
+        android:id="@+id/decBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sofachri"
+        android:background="#2C3E50"
+        android:layout_below="@+id/outputText"
+        android:text="Decrypt"/>
+
+
+</RelativeLayout>

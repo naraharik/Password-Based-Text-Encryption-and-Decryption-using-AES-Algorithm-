@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#434343"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#5B6467"
+        android:padding="40dp"
+        android:textColor="#FAEBD7"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/inputPasswordd"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/bros"
+        android:textColorHint="#FFE4E1"
+        android:textColor="#FAEBD7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/outputText"
+        android:hint="enter password"
+        android:padding="12dp"/>
+    <Button
+        android:id="@+id/deccBtn"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sofachri"
+        android:background="#2C3E50"
+        android:layout_below="@+id/inputPasswordd"
+        android:text="Decrypt"/>
+
+    <TextView
+        android:id="@+id/outputtText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#5B6467"
+        android:padding="40dp"
+        android:textColor="#FAEBD7"
+        android:textStyle="bold"
+        android:layout_below="@id/deccBtn" />
+</RelativeLayout>
